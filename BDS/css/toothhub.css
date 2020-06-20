@@ -215,8 +215,43 @@ a:hover, a:active, a:focus {
   box-sizing: border-box;
 }
 
-
-
+.nav-logo {
+  display: none;
+  line-height: 3px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.top-nav-collapse .nav-logo {
+    -webkit-display: flex;
+  -ms-display: flex;
+      display: flex;
+}
+.logo-wrapper {
+   -webkit-display: flex;
+  -ms-display: flex;
+      display: flex;
+      -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    text-align: center
+}
+.logo-wrapper .navbar-brand {
+    font-weight: bold;
+    color: #fff;
+    font-size: 40px;
+}
+.logo-wrapper span {
+  color: #fff;
+}
+.center-logo {
+  position: relative;
+}
 /*---------------------------------------
     Preloader section              
 -----------------------------------------*/
@@ -283,6 +318,7 @@ a:hover, a:active, a:focus {
     font-size: 24px;
     line-height: 35px;
     letter-spacing: 1px;
+    padding-bottom: 0;
 }
 
 .custom-navbar .nav li a {
@@ -361,6 +397,8 @@ a:hover, a:active, a:focus {
   background-position: 50% 50%;
   width: 100%;
   height: 100vh;
+      background-color: rgba(0,0,0,.3);
+    background-blend-mode: color;
 }
 
 #home .home-thumb {
