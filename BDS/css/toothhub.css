@@ -222,10 +222,16 @@ a:hover, a:active, a:focus {
   -ms-flex-direction: column;
   flex-direction: column;
 }
-.top-nav-collapse .nav-logo {
+.top-nav-collapse .nav-logo,.address {
     -webkit-display: flex;
   -ms-display: flex;
       display: flex;
+}
+.address div {
+  margin-right:20px;
+}
+.address div:last-child {
+  margin-right: 0;
 }
 .logo-wrapper {
    -webkit-display: flex;
@@ -400,7 +406,16 @@ a:hover, a:active, a:focus {
       background-color: rgba(0,0,0,.3);
     background-blend-mode: color;
 }
-
+ .address span {
+  padding-bottom: 0 !important;
+  margin: 0;
+  line-height: 18px;
+}
+.address p {
+   padding-bottom: 0!important;
+  margin-bottom: 10px;
+  line-height: 18px;
+}
 #home .home-thumb {
   display: -webkit-box;
   display: -webkit-flex;
@@ -422,6 +437,8 @@ a:hover, a:active, a:focus {
 
 #about .about-img {
     background: url('../images/about-img.jpg') no-repeat;
+    background-position: top !important;
+    background-size: cover !important;
 }
 
 #about .about-thumb,
@@ -561,7 +578,11 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 #contact {
-  background: #E9724C;
+  background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 
 #contact .contact-form,
