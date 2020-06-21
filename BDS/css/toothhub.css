@@ -254,15 +254,16 @@ a:hover, a:active, a:focus {
     transform: translateY(-50%);
     left: 0;
     right: 0;
-    text-align: center
+    text-align: center;
+    margin-top: 60px;
 }
 .logo-wrapper .navbar-brand {
     font-weight: bold;
-    color: #fff;
+    color: green;
     font-size: 40px;
 }
 .logo-wrapper span {
-  color: #fff;
+  color: green;
 }
 .center-logo {
   position: relative;
